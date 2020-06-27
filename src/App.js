@@ -1,9 +1,8 @@
 import React, { useRef, useState, useCallback } from 'react';
 import Webcam from 'react-webcam';
-import { Button, PageHeader, Row, Col, Empty } from 'antd';
+import { PageHeader, Empty } from 'antd';
 import { SmallDashOutlined } from '@ant-design/icons';
 import Toast, { T } from 'react-toast-mobile';
-import logo from './logo.svg';
 import './App.less';
 import 'react-toast-mobile/lib/react-toast-mobile.css';
 
@@ -19,7 +18,7 @@ const Drawer = ({ isShowDrawer, onOpenChange, listImgSrc }) => (
       {listImgSrc && listImgSrc.length !== 0 && (
         <div className="list-img">
           {listImgSrc.map((src) => (
-            <img src={src} className="img-content" />
+            <img src={src} className="img-content" alt="" />
           ))}
         </div>
       )}
