@@ -1,0 +1,152 @@
+@import '~antd/dist/antd.less';
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 100vh;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-main-content {
+  height: 100%;
+  max-width: 600px;
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+
+.App-main-content .App-video {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.App-main-content video {
+  width: 100%;
+}
+
+.App-title {
+  position: absolute;
+  top: 0;
+  height: 80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: black;
+}
+
+.title {
+  font-size: 25px;
+  text-align: center;
+}
+
+.App-action {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: black;
+  z-index: 9;
+}
+
+.outer-circle {
+  height: 55px;
+  width: 55px;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.inner-circle {
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.side-icon {
+  width: 50px;
+}
+.App-list-image-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: #c0c0c04a solid 1px;
+}
+
+.am-drawer-sidebar {
+  width: 100%;
+  background-color: ghostwhite;
+  height: 100%;
+}
+
+.drawer {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9;
+  transition: all 0.5s ease;
+
+  &.hide {
+    right: -100%;
+  }
+}
+
+.site-page-header {
+  border-bottom: 1px solid rgb(235, 237, 240);
+}
+
+.site-page-content {
+  padding: 25px 15px 90px;
+  color: rgba(0, 0, 0, 0.65);
+  overflow: auto;
+  height: 100%;
+}
+.list-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-content {
+  width: 150px;
+  height: 120px;
+  margin: 10px;
+}
