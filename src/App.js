@@ -57,11 +57,7 @@ function App() {
             <div />
           </div>
           <div className="App-video">
-            <Webcam
-              audio={false}
-              ref={webcamRef}
-              screenshotFormat="image/jpeg"
-            />
+            <Webcam ref={webcamRef} screenshotFormat="image/jpeg" />
             <Toast />
           </div>
           <div className="App-action">
